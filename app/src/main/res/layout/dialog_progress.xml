@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+                  android:padding="@dimen/window_padding_left">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginLeft="@dimen/window_padding_left"
+            android:gravity="center_vertical"
+            android:minWidth="250dp"
+            android:paddingLeft="@dimen/window_padding_left"
+            android:paddingRight="@dimen/window_padding_left"
+            android:text="@string/please_wait_moment"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_large"/>
+    </LinearLayout>
+</layout>

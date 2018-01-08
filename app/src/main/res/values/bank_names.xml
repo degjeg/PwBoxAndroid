@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="bank_names">
+        <item> ICBC </item>
+        <item> China Construction Bank </item>
+        <item> Agricultural Bank of China </item>
+        <item> Bank of China </item>
+        <item> Morgan chase </item>
+        <item> Wells Fargo Bank </item>
+        <item> HSBC Holdings </item>
+        <item> Citibank </item>
+        <item> Bank of America </item>
+        <item> Bank of Santander </item>
+        <item> MITSUBISHI UFJ Financial Group </item>
+        <item> Bank of communications </item>
+        <item> ITAU joint Banking Holding Company </item>
+        <item> federal bank </item>
+        <item> Royal Bank of Canada </item>
+        <item> China Merchants Bank </item>
+        <item> Westpac banking group </item>
+        <item>Bradesco</item>
+        <item> TD Bank Group </item>
+        <item> UBS </item>
+        <item> Industrial Bank </item>
+        <item> Societe Generale  ANZ bank </item>
+        <item> Sumitomo Mitsui Financial Group </item>
+        <item> China Minsheng Bank </item>
+        <item> National Bank of Australia </item>
+    </string-array>
+</resources>

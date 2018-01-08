@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <com.pw.box.ui.widgets.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rightText="@string/edit"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/window_padding_left"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_big"
+                    tools:text="sdfasdfjas;df"/>
+
+                <View
+                    style="@style/Divider"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType=""
+                    android:padding="@dimen/window_padding_left"
+                    android:textColor="@color/text_color_black"
+                    android:textCursorDrawable="@null"
+                    android:textIsSelectable="true"
+                    tools:text="sdfasdfjas;df"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_copy"
+            style="@style/OkButtonWithMargin"
+            android:text="@string/copy"/>
+
+    </LinearLayout>
+</layout>

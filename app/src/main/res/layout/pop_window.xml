@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="160dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingRight="4dp">
+
+    <TextView
+        android:id="@+id/item_add"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/add"/>
+
+    <View style="@style/DividerBlack"/>
+
+    <TextView
+        android:id="@+id/item_genpw"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/gen_password"/>
+
+    <View style="@style/DividerBlack"/>
+
+    <TextView
+        android:id="@+id/item_gpedit"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/gp_edit"/>
+
+    <View style="@style/DividerBlack"/>
+
+    <TextView
+        android:id="@+id/item_settings"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/settings"/>
+
+    <View style="@style/DividerBlack"/>
+
+    <!--<TextView
+        android:id="@+id/item_crypto"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/crypto_assistant"/>
+
+    <View style="@style/DividerBlack"/>-->
+
+    <TextView
+        android:id="@+id/item_supportus"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/item_supportus"/>
+
+    <View style="@style/DividerBlack"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputLayout">
+        <!--<attr name="tagText"/>-->
+        <!--<attr name="tagWidth" format="dimension"/>-->
+        <!--<attr name="tagHeight" format="dimension"/>-->
+        <!--<attr name="tagTextSize" format="dimension"/>-->
+        <!--<attr name="tagTextColor" format="color"/>-->
+        <!--<attr name="contentTextSize" format="dimension"/>-->
+        <!--<attr name="contentTextColor" format="color"/>-->
+        <!--<attr name="contentText" format="string"/>-->
+        <!--<attr name="dividerWidth" format="dimension"/>-->
+        <!--<attr name="dividerColor" format="color"/>-->
+
+        <attr name="tagStyle" format="reference"/>
+        <attr name="contentStyle" format="reference"/>
+        <attr name="dividerStyle" format="reference"/>
+
+
+    </declare-styleable>
+
+</resources>

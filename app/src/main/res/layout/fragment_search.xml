@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/titlebar_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:src="@drawable/title_bar_left_selecter"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_back"
+            android:background="@drawable/bg_edit_dark"
+            android:drawableLeft="@mipmap/ic_search_edit"
+
+            android:drawablePadding="3dp"
+            android:hint="@string/search"
+            android:imeActionLabel="@string/search"
+            android:imeOptions="actionSearch"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="35dp"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/et_search"
+            android:scaleType="center"
+            android:src="@mipmap/ic_delete"/>
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_small" />-->
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<Button
+        android:id="@+id/btn"
+        style="@style/OkButton"
+        android:layout_marginBottom="@dimen/item_vertical_margin_half"
+        android:layout_marginTop="@dimen/item_vertical_margin_half"
+
+        android:text="@string/save" />-->
+</LinearLayout>

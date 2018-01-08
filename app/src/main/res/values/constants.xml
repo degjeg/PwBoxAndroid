@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="min_question_len">3</integer>
+    <integer name="max_question_len">20</integer>
+    <integer name="min_account_len">3</integer>
+    <integer name="max_account_len">20</integer>
+    <integer name="min_password_len">10</integer>
+    <integer name="max_password_len">30</integer>
+    <integer name="password_len">32</integer>
+</resources>

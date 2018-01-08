@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="bank_names">
+        <item>中国工商银行</item>
+        <item>中国建设银行</item>
+        <item>中国农业银行</item>
+        <item>中国银行</item>
+        <item>摩根大通</item>
+        <item>富国银行</item>
+        <item>汇丰控股</item>
+        <item>花旗银行</item>
+        <item>美国银行</item>
+        <item>桑坦德银行</item>
+        <item>三菱日联金融集团</item>
+        <item>交通银行</item>
+        <item>伊塔乌联合银行控股公司</item>
+        <item>联邦银行</item>
+        <item>加拿大皇家银行</item>
+        <item>中国招商银行</item>
+        <item>西太平洋银行集团</item>
+        <item>布拉德斯科银行</item>
+        <item>多伦多道明银行集团</item>
+        <item>瑞银集团</item>
+        <item>兴业银行</item>
+        <item>澳新银行</item>
+        <item>三井住友金融集团</item>
+        <item>中国民生银行</item>
+        <item>澳大利亚国民银行</item>
+    </string-array>
+</resources>

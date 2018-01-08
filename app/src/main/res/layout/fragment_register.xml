@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.pw.box.ui.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/register_title"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/window_padding_left"
+            android:paddingRight="@dimen/window_padding_left"
+            android:paddingTop="@dimen/window_padding_top">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_account"
+                style="@style/EditText"
+                android:hint="@string/hint_input_account"
+                android:maxLength="@integer/max_account_len"
+                android:singleLine="true"
+
+                app:met_clearButton="true"
+                app:met_floatingLabelText="@string/account"
+                app:met_maxCharacters="@integer/max_account_len"
+                app:met_minCharacters="@integer/min_account_len"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                style="@style/EditTextPw"
+                android:layout_marginTop="@dimen/item_vertical_margin_half"
+                android:hint="@string/hint_input_password_reg"
+                app:met_floatingLabelText="@string/password"
+               />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password1"
+                style="@style/EditTextPw"
+                android:layout_marginTop="@dimen/item_vertical_margin_half"
+                android:hint="@string/password_ag"
+                app:met_floatingLabelText="@string/password_ag"
+               />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/OkButton"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/register"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

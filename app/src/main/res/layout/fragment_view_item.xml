@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pw.box.ui.widgets.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@null"
+        app:rightText="@string/edit_item" />
+
+
+    <FrameLayout
+        android:id="@+id/ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <!--<Button
+        android:id="@+id/btn"
+        style="@style/OkButton"
+        android:layout_marginBottom="@dimen/item_vertical_margin_half"
+        android:layout_marginTop="@dimen/item_vertical_margin_half"
+
+        android:text="@string/save" />-->
+</LinearLayout>

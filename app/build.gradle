@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION as int
+
+    defaultConfig {
+        applicationId "com.pw.box"
+        minSdkVersion MIN_SDK_VERSION as int
+        targetSdkVersion TARGET_SDK_VERSION as int
+        versionCode 5
+        versionName "1.6-test"
+
+
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+                // assets.srcDirs = ['assets']
+            }
+        }
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        // ndk {
+        //     moduleName "core"         //生成的so名字
+        //     ldLibs "log", "z", "m", "c"
+        //     abiFilters "armeabi", "x86" //输出指定三种abi体系结构下的so库。目前可有可无。
+        // }
+
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+
+    //配置keystore签名
+    signingConfigs {
+        release {
+            storeFile file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    flavorDimensions "publish_channel"
+
+    productFlavors {
+        yingyongbao {}
+
+
+        productFlavors.all { flavor ->
+            LinkedHashMap<String, Object> map = new LinkedHashMap<String, Object>()
+            map.put("CHANNEL", name)
+            flavor.manifestPlaceholders = map
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+apply plugin: 'org.greenrobot.greendao'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    kapt dataBinding
+
+
+    implementation 'de.greenrobot:greendao:2.1.0'
+    // compile files('libs/netty-all-5.0.0.Alpha2.jar')
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation(name: 'xrecyclerview-debug', ext: 'aar')
+    implementation files('libs/bcprov-jdk15-133.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation okHttp
+    implementation supportV4
+    implementation recyclerView
+    implementation supportDesign
+    implementation files('libs/mta-sdk-2.2.1.jar')
+    implementation files('libs/mid-sdk-3.6.jar')
+    implementation constraintLayout
+    implementation 'com.squareup.wire:wire-runtime:2.2.0'
+    implementation files('libs/GDTUnionSDK.4.12.553.min.jar')
+
+    // 腾讯bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+

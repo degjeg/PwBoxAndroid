@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="4dp">
+
+    <TextView
+        android:id="@+id/item_add"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/add" />
+
+    <View style="@style/DividerBlack" />
+
+    <TextView
+        android:id="@+id/item_changepw"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/modify_password" />
+
+    <View style="@style/DividerBlack" />
+
+    <TextView
+        android:id="@+id/item_export"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/export" />
+
+    <View style="@style/DividerBlack" />
+
+    <TextView
+        android:id="@+id/item_import"
+        style="@style/PopMenuItem"
+        android:layout_width="match_parent"
+        android:text="@string/import_data" />
+
+    <View style="@style/DividerBlack" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccccc"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.pw.box.ui.widgets.TitleBar
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/setlock"
+
+        />
+
+    <com.pw.box.ui.widgets.PatternLockView
+        android:id="@+id/plv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/window_padding_top"
+        app:innerCircleSize="8dp"
+        app:lineColor1="#33ffff00"
+        app:lineColor2="#3300dddd"
+        app:lineColor3="#33cccc00"
+        app:lineColor4="#33aaaa00"
+        app:lineWidth="8dp"
+        app:outerCircleSize1="40dp"
+        app:outerCircleSize2="44dp"
+        app:xPtCount="6"
+        app:xSpacing="14dp"
+        app:yPtCount="8"
+        app:ySpacing="14dp" />
+
+
+    <!--<Button
+        android:id="@+id/btn"
+        style="@style/OkButton"
+        android:layout_marginBottom="@dimen/item_vertical_margin"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:enabled="false"
+        android:text="@string/sure" />-->
+</LinearLayout>

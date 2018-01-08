@@ -1,0 +1,10 @@
+package com.pw.box.bean.protobuf.cli;
+// option java_package = "com.pw.box.bean.protobuf";
+
+message SaveKey {
+	optional string account = 1;
+	optional string key_md5 = 2;
+	optional bytes pw1 = 3;
+	optional bytes pw2 = 4;
+	optional int32 get_line_count = 5;
+}

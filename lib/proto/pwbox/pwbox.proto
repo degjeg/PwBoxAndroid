@@ -1,0 +1,191 @@
+package com.pw.box.bean.protobuf;
+// option java_package = "com.pw.box.bean.protobuf";
+
+message DeviceInfo {
+	optional string device_id = 1;
+	optional string device_name = 2;
+}
+
+message GetHostRes {
+	optional int32 retCode = 1;
+	optional string errorMessage = 2;
+	optional string host = 3;
+	optional int32 port = 4;
+}
+
+message AppUpdateInfo {
+	optional int32 version_code = 1;
+	optional string version_name = 2;
+	optional string desc = 3;
+	optional string url = 4;
+	optional int32 size = 5;
+	optional string md5 = 6;
+}
+
+message CheckAppVerRequest {
+	optional int32 ver = 1;
+	optional string channel = 2;
+}
+
+message CheckAppVerResponse {
+	optional int32 retCode = 1;
+	optional string errorMessage = 2;
+	optional AppUpdateInfo info = 3;
+}
+
+message FeedBackRequest {
+	optional string content = 1;
+	optional string contact = 2;
+	optional string uname = 3;
+	optional string appVer = 4;
+	optional string androidVer = 5;
+	optional string phoneModel = 6;
+}
+
+message RegisterReq {
+	optional string account = 1;
+	optional bytes pw_loggin = 2; //
+	optional bytes pw_encrypt = 3; //
+	optional DeviceInfo device_info = 4;
+
+}
+
+message LoginReq {
+	optional string token = 1;
+	optional string account = 2;
+	optional bytes password = 3;
+	optional DeviceInfo device_info = 4;
+}
+
+message LoginRes {
+	optional int32 retCode = 1;
+	optional string description = 2;
+	optional string token = 3;
+	optional bytes raw_key_by_pw = 4;
+	optional bool have_protection = 5;
+	optional int32 data_version = 6;
+	optional int64 max_data_id = 7;
+}
+
+message GetProtecReq {
+	optional string account = 1;
+}
+message GetProtectRes {
+	optional int32 retCode = 1;
+	optional string errorMessage = 2;
+	optional string question = 3;
+}
+
+message SetProtect {
+	optional bytes old_answer = 1;
+	optional string new_question = 2; //
+	optional bytes new_answer = 3;
+	optional bytes raw_key_by_answer = 4;
+
+}
+
+
+message ChangePasswordReq {
+	optional bytes old_password = 1; // old password
+	optional bytes new_password = 2; // new password
+	optional bytes raw_key_by_password = 3; //  new key encryped with password
+
+}
+
+message RetrievePasswordReq {
+	optional string account = 1;
+	optional bytes answer = 2;
+	optional bytes password = 3; //
+	optional bytes raw_key_by_password = 4; //
+}
+
+message RetrievePassRes {
+	optional int32 retCode = 1;
+	optional string errorMessage = 2;
+	optional bytes raw_key_by_answer = 3;
+}
+
+message Item {
+	optional int32 type = 1;
+	optional string name = 2;
+	optional string value = 3;
+}
+
+message Data {
+	optional int64 id = 1;
+	optional int32 type = 2;
+	optional string tag = 3;
+	optional string sub_type = 4;
+	repeated Item items = 5;
+	optional int32 gpid = 6;
+}
+
+message ItemOfServer {
+	optional int64 id = 1;
+	optional bytes data = 2;
+	optional int32 compressed = 3;
+}
+
+message GetItemListReq {
+	optional int32 v = 1;
+	optional int64 from = 2;
+
+}
+message GetItemListRes {
+	optional int32 retCode = 1;
+	optional string errorMessage = 2;
+	optional string description = 3;
+	optional int32 v = 4;
+	optional int32 total = 5;
+	repeated ItemOfServer items = 6;
+}
+
+message DeleteItemReq {
+	repeated int64 id = 1;
+}
+
+message ItemRes {
+	optional int32 retCode = 1;
+	optional string description = 2;
+	optional int32 newDataVer = 3;
+	optional int32 newDataId = 4;
+}
+
+message Group {
+    optional int32 id = 1;
+    optional string name = 2;
+	optional string desc = 3;
+}
+
+// 用于请求分组列表的返回,新增分组
+message GetGroupListRequest {
+	optional string md5 = 1;
+}
+
+// 用于请求分组列表的返回,新增分组
+message GetGroupListResponse {
+	optional int32 retCode = 1;
+	optional string description = 2;
+    repeated Group gps = 3;
+}
+
+// 用于请求分组列表的返回,新增分组
+message AddGroupRequest {
+	optional string name = 1;
+	optional string desc = 2;
+}
+// 用于请求分组列表的返回,新增分组
+message AddGroupResponse {
+	optional int32 retCode = 1;
+	optional string description = 2;
+	optional int32 id = 3;
+}
+
+message IntList {
+    repeated int32 ids = 1;
+}
+
+message EditGroupRequest {
+    optional int32 id = 1;
+    optional string name = 2;
+}

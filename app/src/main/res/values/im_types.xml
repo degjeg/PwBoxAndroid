@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="im_types">
+
+        <item>Facebook</item>
+        <item>Twiter</item>
+        <item>Wechat</item>
+        <item>LinkedIn</item>
+        <item>YouTube</item>
+        <item>Forsquare</item>
+        <item>Flickr</item>
+        <item>Tumblr</item>
+        <item>QQ</item>
+        <item>WindowsLive</item>
+        <item>Skype</item>
+        <item>AIM</item>
+        <item>Yahoo</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+        <item>Other</item>
+    </string-array>
+</resources>

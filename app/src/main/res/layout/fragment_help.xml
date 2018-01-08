@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.pw.box.ui.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/help"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/window_padding_top"
+            android:paddingLeft="@dimen/window_padding_left"
+            android:paddingRight="@dimen/window_padding_left"
+            android:paddingTop="@dimen/window_padding_top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_1"
+                android:textColor="@color/text_color_black"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_half"
+                android:text="@string/answer_1"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/question_2"
+                android:textColor="@color/text_color_black"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_half"
+                android:text="@string/answer_2"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_normal"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

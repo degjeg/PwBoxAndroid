@@ -1,0 +1,38 @@
+package com.common.bean;
+
+// option java_package = "com.common.bean";
+message BaseRes {
+    optional int32 retCode = 1;
+    optional string description = 2;
+}
+
+message DataWithLen {
+    optional int32 len = 1;
+    optional bytes data = 2;
+}
+message GetPublicKeyRequest {
+    optional int32 ver = 1;
+    optional bytes random1 = 2;
+    optional string account = 3;
+}
+
+message GetPublicKeyResponse {
+    optional int32 ret_code = 1;
+    optional string error_message = 2;
+    optional int32 ver = 3;
+    optional bytes public_key = 4;
+    optional bytes pub_exponent = 5;
+    optional int32 comkey_len = 6;
+}
+
+
+message GetCommunicateKeyRequest {
+    optional bytes random1 = 1;
+    optional bytes random2 = 2;
+}
+
+message GetCommunicateKeyResponse {
+    optional int32 ret_code = 1;
+    optional string error_message = 2;
+    optional bytes random1 = 3;
+}

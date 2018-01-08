@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="im_types">
+        <item>QQ</item>
+        <item>微信</item>
+        <item>WindowsLive</item>
+        <item>Skype</item>
+        <item>环聊</item>
+        <item>AIM</item>
+        <item>雅虎</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+        <item>其它</item>
+    </string-array>
+</resources>

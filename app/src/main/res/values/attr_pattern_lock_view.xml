@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PatternLockView">
+        <attr name="xPtCount" format="integer" />
+        <attr name="yPtCount" format="integer" />
+        <attr name="xSpacing" format="reference|dimension" />
+        <attr name="ySpacing" format="reference|dimension" />
+        <attr name="innerCircleSize" format="reference|dimension" />
+        <attr name="innerCircleColor" format="reference|color" />
+        <attr name="outerCircleSize1" format="reference|dimension" />
+        <attr name="outerCircleSize2" format="reference|dimension" />
+        <attr name="outerCircleLineWidth" format="reference|dimension" />
+        <attr name="outerCircleColor" format="reference|color" />
+        <attr name="lineColor1" format="reference|color" />
+        <attr name="lineColor2" format="reference|color" />
+        <attr name="lineColor3" format="reference|color" />
+        <attr name="lineColor4" format="reference|color" />
+        <attr name="lineWidth" format="reference|dimension" />
+    </declare-styleable>
+
+</resources>

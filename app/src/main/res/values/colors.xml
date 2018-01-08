@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#393a3f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="titlebar_bg_color">#393a3f</color> <!--57 58 63 #18B4ED-->
+    <color name="trans_bg_color_pressed">#393a3f</color>
+    <color name="trans_bg_color">#494a4f</color>
+
+    <color name="bg_color_ok_button_pressed">#ef800c</color>
+    <color name="bg_color_ok_button_normal">#ff900c</color>
+    <color name="bg_color_ok_button_disabled">#ddd</color>
+    <color name="bg_color_white">#ffffff</color>
+    <color name="bg_color_gray">#cceeeeee</color>
+    <color name="text_color_red">#ff0000</color>
+    <color name="divider">#e8e8e8</color>
+    <color name="bg_gray">#88888888</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateView">
+        <attr name="loadingView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="failView" format="reference" />
+        <attr name="emptyView" format="reference" />
+        <attr name="otherView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="leftText" format="string|reference" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightText" format="string|reference" />
+        <attr name="rightIcon" format="reference" />
+    </declare-styleable>
+
+</resources>
